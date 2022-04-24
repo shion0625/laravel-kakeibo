@@ -3,7 +3,7 @@ FROM php:8.1-fpm-bullseye AS base
 WORKDIR /data
 
 # timezone environment
-ENV TZ=UTC \
+ENV TZ=Asia/Tokyo \
   # locale
   LANG=en_US.UTF-8 \
   LANGUAGE=en_US:en \
