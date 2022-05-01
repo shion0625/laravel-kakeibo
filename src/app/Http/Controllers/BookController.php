@@ -15,4 +15,7 @@ final class BookController extends Controller
         #compactにはビューファイルに送るデータを選択
         return view("books.index", compact("books"));
     }
+    function show(Book $book){
+        return view("books.show", compact("book"));
+    }
 }
