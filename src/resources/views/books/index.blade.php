@@ -2,6 +2,7 @@
 
 @section('content')
 <h1>家計簿</h1>
+<a href="{{route('books.create')}}"class="btn btn-success">+登録</a>
 <table class="table">
   <tr>
     <th>年月</th>

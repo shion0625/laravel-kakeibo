@@ -1,7 +1,8 @@
 @extends('layouts.layouts')
 @section('content')
-  <h1>新しい家計簿データを追加</h1>
-  <form method="POST" action="/books">@csrf
+  <h1>新しい家計簿データを修正</h1>
+  <form method="POST" action="/books/">
+    @csrf
     <div class="form-group">
       <label>年度</label>
       <input type="number" name="year" class="form-control">
