@@ -45,4 +45,8 @@ final class BookController extends Controller
         $book->save();
         return redirect()->route('books.show', $book);
     }
+    public function destroy(Book $book){
+        $book->delete();
+        return redirect()->route('books.index');
+    }
 }
