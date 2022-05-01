@@ -36,7 +36,7 @@
     </div>
     <div class="form-group">
       <label for="product-name">メモ</label>
-      <input type="text"name="memo"class="form-control">\
+      <input type="text"name="memo"class="form-control">
     </div>
     <button type="submit" class="btn btn-primary">送信</button>
     <a href="{{route('books.index')}}" class="btn btn-secondary">戻る</a>
