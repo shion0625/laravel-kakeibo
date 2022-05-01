@@ -26,8 +26,8 @@ final class BookController extends Controller
     public function store(Request $request){
         $book = new Book();
         $book->year= $request->input("year");
-        $book->inout = $request->input("inout");
         $book->month = $request->input("month");
+        $book->inout = $request->input("inout");
         $book->category = $request->input("category");
         $book->amount = $request->input("amount");
         $book->save();
@@ -35,5 +35,14 @@ final class BookController extends Controller
     }
     public function edit(Book $book){
         return view("books.edit", compact("book"));
+    }
+    public function update(Request $request, Book $book){
+        $book->year= $request->input("year");
+        $book->inout = $request->input("inout");
+        $book->month = $request->input("month");
+        $book->category = $request->input("category");
+        $book->amount = $request->input("amount");
+        $book->save();
+        return redirect()->route('books.show', $book);
     }
 }
