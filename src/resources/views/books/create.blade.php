@@ -1,5 +1,6 @@
-@extends('layouts.layouts')
+@extends('layouts.app')
 @section('content')
+
   <h1>新しい家計簿データを追加</h1>
   <form method="POST" action="/books">@csrf
     <div class="form-group">

@@ -1,4 +1,5 @@
-@extends('layouts.layouts')
+@extends('layouts.app')
+
 @section('content')
   <h1>新しい家計簿データを修正</h1>
   <form method="POST" action="/books/{{$book->id}}">
