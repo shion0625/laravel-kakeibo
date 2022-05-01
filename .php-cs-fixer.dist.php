@@ -7,6 +7,7 @@ $finder = PhpCsFixer\Finder::create()
         __DIR__ . '/src/database/factories',
         __DIR__ . '/src/database/seeders',
         __DIR__ . '/src/routes',
+        __DIR__ . '/src/resources',
         __DIR__ . '/src/tests',
     ]);
 
@@ -16,14 +17,14 @@ return $config
     ->setRiskyAllowed(true)
     ->setRules([
         '@PhpCsFixer:risky' => true,
-        'blank_line_after_opening_tag' => false,
-        'linebreak_after_opening_tag' => false,
+        'blank_line_after_opening_tag' => true,
+        'linebreak_after_opening_tag' => true,
         'declare_strict_types' => true,
         'phpdoc_types_order' => [
             'null_adjustment' => 'always_last',
             'sort_algorithm' => 'none',
         ],
-        'no_superfluous_phpdoc_tags' => false,
+        'no_superfluous_phpdoc_tags' => true,
         'global_namespace_import' => [
             'import_classes' => true,
             'import_constants' => true,
@@ -37,7 +38,7 @@ return $config
         ],
         'not_operator_with_successor_space' => true,
         'blank_line_after_namespace' => true,
-        'final_class' => true,
+        'final_class' => false,
         'date_time_immutable' => true,
         'declare_parentheses' => true,
         'final_public_method_for_abstract_class' => true,
