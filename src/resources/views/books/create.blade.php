@@ -6,7 +6,7 @@
       <label>年度</label>
       <input type="number" name="year" class="form-control">
     </div>
-    <div class="formgroup">
+    <div class="form-group">
       <label>対象月</label>
       <input type="number" name="month" class="form-control">
     </div>
@@ -40,5 +40,6 @@
       <input type="number" name="amount" id="product-name" class="form-control">
     </div>
     <button type="submit" class="btn btn-primary">送信</button>
+    <a href="{{route('books.index')}}" class="btn btn-secondary">戻る</a>
   </form>
 @endsection
