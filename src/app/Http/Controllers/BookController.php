@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace App\Http\Controllers;
 
@@ -17,5 +19,8 @@ final class BookController extends Controller
     }
     function show(Book $book){
         return view("books.show", compact("book"));
+    }
+    function create(){
+        return view("books.create");
     }
 }

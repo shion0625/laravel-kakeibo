@@ -17,14 +17,14 @@ return $config
     ->setRiskyAllowed(true)
     ->setRules([
         '@PhpCsFixer:risky' => true,
-        'blank_line_after_opening_tag' => false,
-        'linebreak_after_opening_tag' => false,
+        'blank_line_after_opening_tag' => true,
+        'linebreak_after_opening_tag' => true,
         'declare_strict_types' => true,
         'phpdoc_types_order' => [
             'null_adjustment' => 'always_last',
             'sort_algorithm' => 'none',
         ],
-        'no_superfluous_phpdoc_tags' => false,
+        'no_superfluous_phpdoc_tags' => true,
         'global_namespace_import' => [
             'import_classes' => true,
             'import_constants' => true,
