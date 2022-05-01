@@ -20,6 +20,11 @@
     <td>
       <a href="{{route('books.edit', $book)}}" class="btn btn-warning">編集</a>
       <a href="{{route('books.show', $book)}}" class="btn btn-info">詳細</a>
+      <form method="POST" action="/books/{{$book->id}}" style="display:inline">
+        @csrf
+        @method("DELETE")
+        <button type="submit" class="btn btn-danger" onclick="return confirm('本当に削除しますか？');">削除</button>
+      </form>
     </td>
   </tr>
   @endforeach
