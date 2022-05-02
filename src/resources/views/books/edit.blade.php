@@ -36,9 +36,14 @@
       <label for="product-name">金額</label>
       <input type="number" name="amount" id="product-name" class="form-control" value="{{$book->amount}}">
     </div>
-    <div class="form-group">
+      <div class="form-group">
+      <label for="product-name">次月目標</label>
+      <input type="number"name="next_objective" id="product-name"class="form-control" value="{{$book->next_objective}}">
+    </div>
+    <div class="form-group mb-3">
       <label for="product-name">メモ</label>
-      <input type="text"name="memo"class="form-control"value="{{$book->memo}}">
+      <input type="text"name="memo" id="product-name" class="form-control"value="{{$book->memo}}">
+    </div>
     <button type="submit" class="btn btn-primary">送信</button>
     <a href="{{route('books.index')}}" class="btn btn-secondary">戻る</a>
   </form>

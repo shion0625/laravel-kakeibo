@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\BookController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::resource("books", "App\Http\Controllers\BookController");
+Route::resource("books", BookController::class);
 Auth::routes();
 
 Route::get('/', [App\Http\Controllers\BookController::class, 'index'])->name('books');

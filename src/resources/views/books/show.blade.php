@@ -16,8 +16,8 @@
     <td>{{$book -> category}}</td>
   </tr>
 <tr>
-  <th>金額</th
-  ><td>{{$book -> amount}}万円</td>
+  <th>金額(次月目標)</th
+  ><td>{{$book -> amount}}万円({{$book -> next_objective}}万円)</td>
 </tr>
 <tr>
     <th>メモ</th>
